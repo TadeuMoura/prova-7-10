@@ -1,3 +1,104 @@
-div{
-    background-color: aquamarine;
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.Principal-acai{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #40105d;
+    width: 100vw;
+    height: 100vh;
+    font-family: Arial;
+    background-image: url('../../assets/image/parede-de-madeira.jpg');
+    background-blend-mode:overlay;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.Caixa-acai{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgb(10, 255, 10);
+    height: 400px;
+    width: 60vw;
+    border-radius: 50px;
+}
+
+.label-input{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 10px 0px;
+
+}
+
+.input-acai{
+    border-style: none;
+    height: 30px;
+    border-radius: 10px;
+    padding: 0px 10px;
+    transition: 0.5s;
+    outline: none;
+}
+
+.input-acai:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
+
+}
+
+.input-acai:focus{
+    background-color: blueviolet;
+    color: #fff;
+    font-weight: bold;
+}
+
+.button-e-valor{
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    padding: 0px 20px;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.calcular-acai{
+    border-style: none;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    border-radius: 100px 0px;
+    background-color: blueviolet;
+    color: rgb(10, 255, 10);
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.calcular-acai:hover{
+    background-color: #fff;
+    color: blueviolet;
+    border: blueviolet solid 2px;
+    transition: 0.2s;
+    transform: scale(110%);
+    box-shadow: 0px 0px 100px blueviolet, 0px 0px 10px blueviolet;
+}
+
+.calcular-acai:active{
+    background-color: #10ff10;
+    transition: 0.05s;
+    transform: scale(100%);
+    box-shadow: 0px 0px 100px blueviolet, 0px 0px 10px blueviolet;
+}
+
+.valor-acai{
+    display: flex;
+    flex-direction: row;
+    
 }
