@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import './index.css'
+import './index.scss'
 
 export default function Signo () {
 
@@ -26,11 +26,20 @@ export default function Signo () {
     }
 
     return(
-        <div>
-            <input type={'text'} onChange={e=> setDia (e.target.value)}/>
-            <input value={mes} onChange={e=>setMes (e.target.value)}/>
-            <button onClick={BuscarSigno}>BUSCAR</button>
-            <p>{resul}</p>
+        <div className='principal-signo'>
+            <div className='digitar-signo'>
+                <div className='data'>
+                    <label>Dia</label>
+                    <input className='input-signo' type={'text'} onChange={e=> setDia (e.target.value)}/>
+                </div>
+                <div className='data'>
+                    <label>Mês</label>
+                    <input value={mes} onChange={e=>setMes (e.target.value)}/>
+                </div>
+                <button onClick={BuscarSigno}>BUSCAR</button>
+                <p>{resul}</p>
+                
+            </div>
         </div>
     )
 }

@@ -15,8 +15,7 @@
     background-image: url('../../assets/image/parede-de-madeira.jpg');
     background-blend-mode:overlay;
     background-repeat: no-repeat;
-    background-size: cover;
-    
+    background-size: cover; 
 }
 
 .Caixa-acai{
@@ -39,13 +38,22 @@
 
 }
 
+
+.input-acai::-webkit-inner-spin-button,
+.input-acai::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
 .input-acai{
     border-style: none;
-    height: 30px;
+    height: 35px;
     border-radius: 10px;
     padding: 0px 10px;
     transition: 0.5s;
     outline: none;
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
 }
 
 .input-acai:hover{
@@ -58,12 +66,13 @@
     background-color: blueviolet;
     color: #fff;
     font-weight: bold;
+    border: #fff solid 2px;
 }
 
 .button-e-valor{
     display: flex;
     flex-direction: row;
-    width: 60%;
+    width: 70%;
     padding: 0px 20px;
     justify-content:space-between;
     align-items: center;
@@ -79,6 +88,7 @@
     color: rgb(10, 255, 10);
     font-weight: bold;
     font-size: 15px;
+    transition: 0.5s;
 }
 
 .calcular-acai:hover{

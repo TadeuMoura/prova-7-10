@@ -29,7 +29,7 @@ export default function CalcularAcai(){
       <div className="label-input"><h2>Total do desconto</h2><input className="input-acai" type={'number'} value={desc} onChange={e=> setDesc(e.target.value)}/></div>
       <div className='button-e-valor'>
         <button className="calcular-acai" onClick={Calcular}>Calcular</button>
-        <div className="valor-acai"><h1>Valor total:</h1><h1> {total}</h1></div>
+        <div className="valor-acai"><h1>Valor total:</h1><h1>{total}</h1></div>
       </div>
       </div>
     </div>
