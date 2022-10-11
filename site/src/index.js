@@ -4,7 +4,10 @@ import './index.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import CalcularAcai from './pages/calculoacai';
 import Signo from './pages/signo';
-import Sorvete from './pages/ice-cream'; 
+import Sorvete from './pages/ice-cream';
+import Salario from './pages/calculosalario';
+import Febre from './pages/medirfebre';
+import Paradas from './pages/calcularparadas';
 
 
 
@@ -15,7 +18,10 @@ root.render(
       <Routes>
       <Route path="/" element={< CalcularAcai />} />
       <Route path="/signo" element={<Signo/>} />
-      <Route path="sorvete" element= {<Sorvete/>} />
+      <Route path="/sorvete" element= {<Sorvete/>} />
+      <Route path="/salario" element= {<Salario/>} />
+      <Route path="/febre" element= {<Febre/>} />
+      <Route path="/paradas" element= {<Paradas/>} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

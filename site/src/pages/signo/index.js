@@ -6,6 +6,7 @@ export default function Signo () {
     const [dia, setDia] = useState('')
     const [mes, setMes] = useState('')
     const [resul, setResul] = useState('Você é de libra? Descubra agora mesmo digitando sua data de nascimento.')
+    
 
     function BuscarSigno () {
         if((dia>=23 && dia<=30 && mes==='setembro') || 
@@ -28,7 +29,7 @@ export default function Signo () {
                 </div>
                 <div className='data'>
                     <label className='lalabel'>Mês</label>
-                    <input className='input-signo' type={'text'} onChange={e=> setMes (e.target.value)}/>
+                    <input className='input-signo' type={'text'} onChange={e=> setMes (e.target.value.toLowerCase())}/>
                 </div>
                 <button className='botaosigno' onClick={BuscarSigno}>BUSCAR</button>
                 <p className='resposta'>{resul}</p>
