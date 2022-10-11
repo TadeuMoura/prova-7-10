@@ -7,7 +7,7 @@ export default function CalcularAcai(){
   const[qtdmed, setQtdmed] = useState(0)
   const[qtdgra, setQtdgra] = useState(0)
   const[desc, setDesc] = useState(0)
-  var[total, setTotal] = useState(0)
+  const[total, setTotal] = useState(0)
 
     function Calcular (){
     if(qtdpeq<0 || qtdmed<0 || qtdgra<0 || desc<0)

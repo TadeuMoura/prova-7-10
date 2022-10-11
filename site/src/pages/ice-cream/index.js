@@ -1,5 +1,5 @@
 import { useState } from "react";
-import './index.css'
+import './index.scss'
 
 
 export default function Sorvete() {
@@ -23,7 +23,7 @@ export default function Sorvete() {
     }
 
     return(
-        <div>
+        <div className="Principal-sorvete">
             <div>
                 <h1>Insira um peso</h1><input type={'number'} value={peso} onChange={e=> setPeso(e.target.value)}/>
                 <h1>Total da Compra: <h1>{total}</h1></h1>
