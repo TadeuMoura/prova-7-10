@@ -8,6 +8,8 @@ import Sorvete from './pages/ice-cream';
 import Salario from './pages/calculosalario';
 import Febre from './pages/medirfebre';
 import Paradas from './pages/calcularparadas';
+import Orcamento from './pages/orcamento';
+import Ingresso from './pages/ingresso';
 
 
 
@@ -22,6 +24,8 @@ root.render(
       <Route path="/salario" element= {<Salario/>} />
       <Route path="/febre" element= {<Febre/>} />
       <Route path="/paradas" element= {<Paradas/>} />
+      <Route path="/orcamento" element= {<Orcamento/>} />
+      <Route path="/ingresso" element= {<Ingresso/>} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
