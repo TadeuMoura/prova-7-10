@@ -10,6 +10,9 @@ import Febre from './pages/medirfebre';
 import Paradas from './pages/calcularparadas';
 import Orcamento from './pages/orcamento';
 import Ingresso from './pages/ingresso';
+import DeAte from './pages/deate';
+import DeAste from './pages/linhadeaste';
+import Quadradin from './pages/quadradin';
 
 
 
@@ -26,6 +29,9 @@ root.render(
       <Route path="/paradas" element= {<Paradas/>} />
       <Route path="/orcamento" element= {<Orcamento/>} />
       <Route path="/ingresso" element= {<Ingresso/>} />
+      <Route path="/contador" element= {<DeAte/>} />
+      <Route path="/linha" element= {<DeAste/>} />
+      <Route path="/quadradin" element= {<Quadradin/>} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
