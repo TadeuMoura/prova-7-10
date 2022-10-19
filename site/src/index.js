@@ -13,6 +13,7 @@ import Ingresso from './pages/ingresso';
 import DeAte from './pages/deate';
 import DeAste from './pages/linhadeaste';
 import Quadradin from './pages/quadradin';
+import Cafe from './pages/querocafeeeee';
 
 
 
@@ -32,6 +33,7 @@ root.render(
       <Route path="/contador" element= {<DeAte/>} />
       <Route path="/linha" element= {<DeAste/>} />
       <Route path="/quadradin" element= {<Quadradin/>} />
+      <Route path="/cafe" element= {<Cafe/>} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
