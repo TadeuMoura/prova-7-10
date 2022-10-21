@@ -12,29 +12,38 @@ export default function Cafe() {
     
 
     function CalcularCafe() {
-        let cadatoma = estudantes*litros/1000
-        let qntcafe = 0
-        let cafe=0
 
-        while(cafe<=4){
-        qntcafe=capacidade 
-        cafe=cafe+2
+        let aluninhos = (estudantes * litros)/1000;
+
+
+        if (aluninhos <= capacidade)
+        setResul (capacidade)
+
+        else {
+           for (let cafe = capacidade; cafe <= aluninhos; cafe +=capacidade) {
+               let trasformador = cafe;
+               let reposta = trasformador + capacidade ;
+               let reposta2 = trasformador + (capacidade -1)
+                  setResul(reposta)
+                  if (capacidade === 1){
+                   setResul(reposta2)
+                  }
         }
 
-    setResul(qntcafe)
-    console.log(qntcafe)
-    }
+        }
 
+
+   }
     
 
     return(
         <div className='div-principal-cafe'>
             <label>Quantos estudantes?</label>
-            <input onChange={e=> setEstudantes(e.target.value)}/>
+            <input type={"number"} onChange={e=> setEstudantes(Number(e.target.value))}/>
             <label>Qual a capacidade do bule?</label>
-            <input onChange={e=> setCapacidade(e.target.value)}/>
+            <input type={"number"} onChange={e=> setCapacidade(Number(e.target.value))}/>
             <label>Quanto cada um bebe?</label>
-            <input onChange={e=> setLitros(e.target.value)}/>
+            <input type={"number"} onChange={e=> setLitros(Number(e.target.value))}/>
             <button onClick={CalcularCafe}>CALCULAR CAFÉ</button>
             <h1>{resul}</h1>
         </div>
