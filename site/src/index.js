@@ -14,6 +14,7 @@ import DeAte from './pages/deate';
 import DeAste from './pages/linhadeaste';
 import Quadradin from './pages/quadradin';
 import Cafe from './pages/querocafeeeee';
+import MediaAluno from './pages/1testando';
 
 
 
@@ -34,6 +35,7 @@ root.render(
       <Route path="/linha" element= {<DeAste/>} />
       <Route path="/quadradin" element= {<Quadradin/>} />
       <Route path="/cafe" element= {<Cafe/>} />
+      <Route path="/teste" element= {<MediaAluno/>} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
